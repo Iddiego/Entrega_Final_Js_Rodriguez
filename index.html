@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Routines BeastMode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/selection.js"></script>    
+    <script src="./js/app.js" type="module"></script>
+
+</head>
+<body class="bg">
+<header>
+    <img src="./resources/bear.png" alt="iso">
+    <h1>Your Coach</h1>
+</header>
+
+<main class="content">
+    
+    <h2>Preferences</h2>
+    <h4>Level</h4>
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="difficulty">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Beginner</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Medium</label>
+      
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Advanced</label>
+      </div>
+
+
+
+      </div>
+
+
+      <h4>Choose Your Muscle</h4>
+    <div class="img" id="selectMuscle">
+        <div class="container" onclick="selectMuscle('Chest', this)" id="chest">
+            <h5>Chest</h5><img src="./resources/chest.png" alt="chest">
+        </div>
+        <div class="container" onclick="selectMuscle('lower_back', this)" id="back">
+            <h5>Back</h5><img src="./resources/back.png" alt="chest">
+        </div>
+        <div class="container" onclick="selectMuscle('quadriceps', this)" id="legs">
+            <h5>Legs</h5><img src="./resources/leg.png" alt="chest">
+        </div>        <div class="container" onclick="selectMuscle('Biceps', this)" id="biceps">
+            <h5>Biceps</h5><img src="./resources/biceps.png" alt="biceps">
+        </div>
+        <div class="container" onclick="selectMuscle('Triceps', this)" id="triceps">
+            <h5>Triceps</h5><img src="./resources/triceps.png" alt="triceps">
+        </div>
+        <div class="container" onclick="selectMuscle('Glutes', this)" id="glutes">
+            <h5>Glutes</h5><img src="./resources/butt.png" alt="butt">
+        </div>
+        <div class="container" onclick="selectMuscle('Shoulders', this)" id="shoulders">
+            <h5>Shoulders</h5><img src="./resources/shoulders.png" alt="shoulders">
+        </div>
+        <div class="container" onclick="selectMuscle('Abdominals', this)" id="abs">
+            <h5>abs</h5><img src="./resources/abs.png" alt="abs">
+        </div>
+        
+    </div>
+    <input type="text" id="searchBar" placeholder="·······No Type·······">
+    <button id="build">Build</button>
+
+<output>
+    <ul id="result"></ul>
+    <p class="parrafos"></p>
+    <h2></h2>
+</output>
+
+
+</div>
+
+
+</main>
+    
+
+
+
+
+
+
+
+
+<footer>
+    <h2>By Diego Rodríguez</h2>
+</footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
